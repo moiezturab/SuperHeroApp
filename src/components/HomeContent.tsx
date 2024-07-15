@@ -7,17 +7,16 @@ import { motion } from "framer-motion";
 const HomeContent = (props: { refElement: RefObject<HTMLDivElement> }) => {
   return (
     <div className="flex flex-col justify-center items-center h-screen  text-white">
-      <div className="md:h-1/2 text-center mt-40">
-        <Typography variant="h1" sx={{ fontSize: "10rem" }}>
+      <div className="md:h-1/2 text-center mt-48">
+        <Typography variant="h1" sx={{ fontSize: "5rem" }}>
           Welcome
         </Typography>
-        <Typography variant="h3">
+        <Typography variant="h3" sx={{ fontSize: "2rem" }}>
           Lets see which hero your are, or are you a villain?
         </Typography>
       </div>
       <div className=" md:h-1/2 flex flex-col justify-center items-center   text-white">
         <motion.button
-          // variant="text"
           initial={{ y: 0 }}
           animate={{
             y: [-10, 10, -10],

@@ -67,7 +67,7 @@ const HomePage = () => {
       <div
         className=" bg-cover "
         style={{
-          backgroundImage: `url('https://wallpaper-house.com/data/out/8/wallpaper2you_276144.jpg')`,
+          backgroundImage: `url('src/assets/images/BG.jpg')`,
         }}
       >
         <div className="bg-transparent text-white">
