@@ -1,18 +1,18 @@
-import HomeContent from "../../components/HomeContent";
+import { UnknownAction } from "@reduxjs/toolkit";
 import { useEffect, useRef, useState } from "react";
-import Slider from "../../components/Slider";
 import { useDispatch, useSelector } from "react-redux";
 
 import {
   setBestMatchClear,
   setInitialData,
 } from "../../redux/slices/QuestionsSlice";
+import Slider from "../../components/Slider";
 import Character from "../../components/Character";
 import Confetti from "../../components/Confetti";
 import { RootState } from "../../redux/store";
+import HomeContent from "../../components/HomeContent";
 import { fetchSuperheroes } from "../../redux/slices/SuperHerosSlice";
 import Loader from "../../components/Loader";
-import { UnknownAction } from "@reduxjs/toolkit";
 
 const HomePage = () => {
   const dispatch = useDispatch();
